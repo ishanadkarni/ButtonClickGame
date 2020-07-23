@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack (spacing : 20){
+            Text("Click the button below as many times as you can.").font(.system(size: 30, weight: .regular, design: .default)).multilineTextAlignment(.center)
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Text("CLICK ME").foregroundColor(.white).font(.system(size: 20, weight: .bold, design: .rounded))
+                }.frame(width : 150, height : 80).background(Color.pink).cornerRadius(30)
+        }
     }
 }
 
